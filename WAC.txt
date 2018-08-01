@@ -1,0 +1,13 @@
+Dir C:\Users\aheiev.a\Desktop
+Copy-Item "C:\Users\aheiev.a\Desktop\наташа-болото-1.png" -Destination \\fs01\fs-users\_TEMP\!Scripts
+
+
+$b = New-PSSession -ComputerName "fs01" -Credential "forpost\adm_pobyrokhin.k"
+
+Copy-Item "C:\Users\aheiev.a\Desktop\шахматы на подарок-1.png" -Destination "E:\" -ToSession $b
+
+
+
+cd \\WS-APP-PF-T01\Scripts\
+.\Hello.ps1
+.\Copy-Item.ps1
