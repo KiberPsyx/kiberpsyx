@@ -1,4 +1,4 @@
-﻿CLS1
+﻿CLS12
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
 # Get-Credentials
